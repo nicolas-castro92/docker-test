@@ -28,11 +28,13 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        docker build -t idunkel/docker-actions:0.0.1 .
+        docker build -t idunkel/docker-actions:0.0.2 .
+        docker build -t idunkel/docker-actions:latest .
 
     - name: Push Docker Image
       run: |
-        docker push idunkel/docker-actions:0.0.1
+        docker push idunkel/docker-actions:0.0.2
+        docker push idunkel/docker-actions:latest
 
 
     
